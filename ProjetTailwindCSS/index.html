@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="/src/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="h-screen font-(family-name:Poppins) flex justify-center align-center"
+  >
+  <header class="h-30 bg-amber-300 flex flex-col justify-center align-middle">
+    <nav class=""> 
+    <a href="hellotailwind.html">
+        <h1 class="p-10 text-3xl font-bold text-blue-700 underline ">Hello Tailwind!</h1>
+    </a>
+    <a href="index.html">Connexion</a>
+    </ul>
+  </nav>
+  </header>
+    <form
+      class="bg-white-800 max-h-180 max-w-500 p-30 shadow-2xl rounded-3xl flex-col flex justify-center gap-y-5"
+      action=""
+    >
+      <h1 class="p-8 text-4xl font-bold flex justify-center">Connexion</h1>
+      <div class="">
+        <label class="text-gray-700" for="name">Nom :</label>
+        <input
+          class="border-1 border-gray-500 hover:border-blue-500 focus:border-blue-500 rounded-md"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+      <div class="">
+        <label class="text-gray-700" for="email">Email :</label>
+        <input
+          class="border-1 border-gray-500 rounded-md hover:border-blue-500 focus:border-blue-500"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="flex flex-col align-text-top">
+        <label class="text-gray-700" for="Message">Message :</label>
+        <textarea
+          class="border-1 border-gray-500 hover:border-blue-500 focus:border-blue-500 rounded-md"
+          name="Message"
+          id="message"
+        ></textarea>
+      </div>
+      <div
+        class="rounded-2xl h-9 bg-blue-500 hover:bg-blue-600 text-white flex justify-center"
+      >
+        <input type="submit" name="submit" value="Envoyer" />
+      </div>
+    </form>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
